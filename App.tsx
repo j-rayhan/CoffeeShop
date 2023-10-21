@@ -9,6 +9,8 @@
  */
 
 import React, {type PropsWithChildren} from 'react';
+import SplashScreen from 'react-native-splash-screen';
+
 import {
   SafeAreaView,
   ScrollView,
@@ -63,7 +65,9 @@ const App = () => {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
-
+  React.useEffect(() => {
+    SplashScreen.hide();
+  },[]);
   return (
     <SafeAreaView style={backgroundStyle}>
       <StatusBar
