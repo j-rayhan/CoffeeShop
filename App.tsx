@@ -16,7 +16,7 @@ import {Home} from './app/view/screen';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
-  const backgroundStyle = 'flex-1 bg-neutral-300 dark:bg-slate-900';
+  const backgroundStyle = 'flex-1 bg-dark dark:bg-white';
   React.useEffect(() => {
     SplashScreen.hide();
   }, []);
@@ -24,7 +24,7 @@ const App = () => {
     <SafeAreaView className={backgroundStyle}>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        className={backgroundStyle}
+        backgroundColor={isDarkMode ? '#0C0F14' : '#FFFFFF'}
       />
       <Home />
     </SafeAreaView>

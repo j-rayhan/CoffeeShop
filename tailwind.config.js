@@ -11,20 +11,21 @@ module.exports = {
       dark: '#0C0F14',
       'dark-light': '#252A32',
     },
-    fontFamily: {
-      poppins: [
-        'Poppins',
-        {
-          fontFeatureSettings: '"cv11", "ss01"',
-          fontVariationSettings: '"opsz" 32',
-        },
-      ], // Adds a new `font-poppins` class
-    },
     extend: {
-      fontSize: {
-        't-1': ['1.75rem', '2rem'],
-        't-6': ['.625rem', '.875rem'],
+      fontFamily: {
+        poppins: [
+          'Poppins', // Adds a new `font-poppins` class
+          'sans-serif',
+          {
+            fontFeatureSettings: '"cv11", "ss01"',
+          },
+        ],
       },
+      // fontSize: {
+      // '2xs': '0.625rem', // Custom extra small font size
+      // 'text-1': ['1.75rem', '2rem'],
+      // 'text-6': ['"0.625rem"', '"0.875rem"'],
+      // },
     },
   },
   plugins: [],
